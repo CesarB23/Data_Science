@@ -33,6 +33,14 @@ print("New Data Appended\n")
 # Qeury for appended data
 query2 = f"SELECT * FROM {table_name} WHERE LNAME = 'Doe'"
 
+# Alternative Sintaxis for querys for not harcoding values
+"""
+query2 = f"SELECT * FROM {table_name} WHERE FNAME = ?"
+
+# Parámetro que será reemplazado en la consulta
+params = ('John',)
+"""
+
 select = pd.read_sql(sql=query2,con=conn)
 print(select)
 
