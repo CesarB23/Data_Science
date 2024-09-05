@@ -163,7 +163,5 @@ cython_debug/
 
 #Files
 source
-*.db
-*.csv
-*.txt
+output_data
 
